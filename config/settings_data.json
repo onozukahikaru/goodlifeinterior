@@ -1,6 +1,6 @@
 {
   "current": {
-    "heading_color": "#3a2a2e",
+    "heading_color": "#1e2d7d",
     "text_color": "#677279",
     "accent_color": "#00badb",
     "link_color": "#00badb",
@@ -13,7 +13,7 @@
     "primary_button_text_color": "#ffffff",
     "secondary_button_background": "#1e2d7d",
     "secondary_button_text_color": "#ffffff",
-    "header_background": "#1e2d7d",
+    "header_background": "#3a2a2e",
     "header_text_color": "#ffffff",
     "header_light_text_color": "#a3afef",
     "header_accent_color": "#00badb",
