@@ -34,11 +34,45 @@
             "button_text": "Button",
             "link": ""
           }
+        },
+        "9ddd5318-8578-4e3f-9c76-06cdc6e81aa5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/smp-bnr04.jpg",
+            "show_overlay": false,
+            "overlay_opacity": 30,
+            "text_color": "#ffffff",
+            "title": "Slide title",
+            "content": "Tell your story",
+            "content_position": "middle_center",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "button_text": "Button",
+            "link": ""
+          }
+        },
+        "28791643-e564-4789-8958-1c1adcba6a02": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/io2007-top-bnr02.jpg",
+            "show_overlay": false,
+            "overlay_opacity": 30,
+            "text_color": "#ffffff",
+            "title": "Slide title",
+            "content": "Tell your story",
+            "content_position": "middle_center",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "button_text": "Button",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "slide-1",
-        "slide-2"
+        "slide-2",
+        "9ddd5318-8578-4e3f-9c76-06cdc6e81aa5",
+        "28791643-e564-4789-8958-1c1adcba6a02"
       ],
       "settings": {
         "edge_to_edge": false,
