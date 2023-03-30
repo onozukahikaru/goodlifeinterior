@@ -39,7 +39,7 @@
           "type": "liquid",
           "settings": {
             "title": "動画",
-            "liquid": "{{ product.title }}\nああああ",
+            "liquid": "{{ product.metafields.custom._video }}",
             "display_mode": "show_all"
           }
         }
