@@ -39,7 +39,7 @@
           "type": "liquid",
           "settings": {
             "title": "動画",
-            "liquid": "<video src=\"{{ product.metafields.custom._video }}\"><\/video>",
+            "liquid": "{% assign file_name = product.metafields.custom._video | split: '\/' | last %}\n\n<img src=\"{{ file_name | file_img_url: \"150x\" }}\">\n\n<video src=\"{{ file_name }}\"><\/video>",
             "display_mode": "show_all"
           }
         }
