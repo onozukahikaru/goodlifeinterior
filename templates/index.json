@@ -244,6 +244,7 @@
         "collection": "テーブル",
         "products_count": 12,
         "show_quick_buy": false,
+        "image": "shopify:\/\/shop_images\/pressdainitan001.webp",
         "background": "#0774d7",
         "text_color": "#ffffff",
         "title": "Featured collection",
