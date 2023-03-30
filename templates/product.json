@@ -38,7 +38,7 @@
         "6f3520b1-6803-4783-8c8b-bb95874e3d14": {
           "type": "liquid",
           "settings": {
-            "title": "ああああ",
+            "title": "動画",
             "liquid": "{{ product.title }}\nああああ",
             "display_mode": "show_all"
           }
