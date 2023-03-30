@@ -182,21 +182,21 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "こたつ",
             "link": ""
           }
         },
         "collection-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "テーブル",
             "link": ""
           }
         },
         "collection-3": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "座卓",
             "link": ""
           }
         },
