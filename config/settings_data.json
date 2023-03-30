@@ -1,6 +1,6 @@
 {
   "current": {
-    "heading_color": "#1e2d7d",
+    "heading_color": "#3a2a2e",
     "text_color": "#677279",
     "accent_color": "#00badb",
     "link_color": "#00badb",
@@ -74,7 +74,10 @@
     "checkout_button_color": "#00badb",
     "checkout_error_color": "#ff0000",
     "search_mode": "product,article",
-    "share_image": ""
+    "share_image": "",
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Metal": {
