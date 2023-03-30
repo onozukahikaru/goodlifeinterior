@@ -34,13 +34,22 @@
           "settings": {
             "display_mode": "show_all"
           }
+        },
+        "6f3520b1-6803-4783-8c8b-bb95874e3d14": {
+          "type": "liquid",
+          "settings": {
+            "title": "ああああ",
+            "liquid": "{{ product.title }}\nああああ",
+            "display_mode": "show_all"
+          }
         }
       },
       "block_order": [
         "product_meta",
         "variant_selector",
         "buy_buttons",
-        "description"
+        "description",
+        "6f3520b1-6803-4783-8c8b-bb95874e3d14"
       ],
       "settings": {
         "image_size": "small",
