@@ -139,7 +139,7 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "",
+        "collection": "good-life-interior",
         "title": "Featured collection",
         "products_count": 8,
         "layout": "vertical",
