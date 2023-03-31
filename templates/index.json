@@ -311,7 +311,7 @@
       ],
       "settings": {
         "product": "10001046",
-        "title": "Featured product",
+        "title": "Featured product（おすすめ商品１商品のみを表示できます。おそらく、商品画面の表示内容をそのまま表示する機能です。直接チェックアウトへ進むことができるのが強みです。）",
         "link_title": "View details",
         "link_url": "",
         "image_size": "small",
