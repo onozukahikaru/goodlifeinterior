@@ -230,7 +230,17 @@
             {%- endif -%}
           </span>
 
+          <style>
+            .price.price--compare {
+              display: flex;
+            }
+            .metafield-single_line_text_field {
+              list-style: none;
+            }
+          </style>
+
           <span class="price price--compare">
+            {{ product.metafields.custom['_dual-pricing-statement'] | metafield_tag }}
             <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
 
             {%- if settings.currency_code_enabled -%}
@@ -251,8 +261,6 @@
           </span>
         {%- endif -%}
       </div>
-
-      <p>価格文言：{{ product.metafields.custom['_dual-pricing-statement'] }}</p>
 
       <div
         class="product-form__price-info"
