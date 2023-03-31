@@ -50,29 +50,12 @@
             "button_text": "Button",
             "link": ""
           }
-        },
-        "28791643-e564-4789-8958-1c1adcba6a02": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/3bb42e6e1b42b75c3008408f45f5a2ae_0a66de15-4dfd-4a45-913c-e1235d96ba12.png",
-            "show_overlay": false,
-            "overlay_opacity": 30,
-            "text_color": "#ffffff",
-            "title": "Slide title",
-            "content": "Tell your story",
-            "content_position": "middle_center",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "button_text": "Button",
-            "link": ""
-          }
         }
       },
       "block_order": [
         "slide-1",
         "slide-2",
-        "9ddd5318-8578-4e3f-9c76-06cdc6e81aa5",
-        "28791643-e564-4789-8958-1c1adcba6a02"
+        "9ddd5318-8578-4e3f-9c76-06cdc6e81aa5"
       ],
       "settings": {
         "edge_to_edge": true,
