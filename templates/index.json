@@ -138,7 +138,7 @@
       "type": "featured-collection",
       "settings": {
         "collection": "こたつ",
-        "title": "Featured collection",
+        "title": "Featured collection（おすすめコレクション所属商品を表示できます。現在はこたつ所属商品は１商品のみ）",
         "products_count": 8,
         "layout": "vertical",
         "stack_products": false,
