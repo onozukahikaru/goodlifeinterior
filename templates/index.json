@@ -11,7 +11,7 @@
             "overlay_opacity": 30,
             "text_color": "#000000",
             "title": "スライドは何枚でも追加できます（最大4枚程度推奨）",
-            "content": "・バナー or ボタンにリンクを設置できます。\n・このスライドではボタンを配置しています。\n・リンクはshopifyでも外部リンクも可能です。\n・2160 x 720px .jpg（pc）\n・750 x 1100px .jpg（モバイル）",
+            "content": "・バナー or ボタンにリンクを設置できます。\n・このスライドではボタンを配置しています。\n・リンクはshopifyでも外部リンクも可能です。\n・推奨サイズ2160 x 720px .jpg（pc）\n・推奨サイズ750 x 1100px .jpg（モバイル）\n・現在は取り急ぎ楽天市場の画像を拡大して登録しています。",
             "content_position": "top_left",
             "button_background": "#3a2a2e",
             "button_text_color": "#ffffff",
