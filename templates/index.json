@@ -22,7 +22,7 @@
         "slide-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/top-bnr.webp",
+            "image": "shopify:\/\/shop_images\/2.png",
             "show_overlay": false,
             "overlay_opacity": 30,
             "text_color": "#ffffff",
