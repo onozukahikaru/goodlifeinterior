@@ -82,60 +82,6 @@
         "cycle_speed": 5
       }
     },
-    "c080b478-1f9d-4db9-9577-39e792a7ed3b": {
-      "type": "logo-list",
-      "blocks": {
-        "template--18400919191846__c080b478-1f9d-4db9-9577-39e792a7ed3b-1680159381bd4e3674-0": {
-          "type": "logo",
-          "settings": {
-            "link": ""
-          }
-        },
-        "template--18400919191846__c080b478-1f9d-4db9-9577-39e792a7ed3b-1680159381bd4e3674-1": {
-          "type": "logo",
-          "settings": {
-            "link": ""
-          }
-        },
-        "template--18400919191846__c080b478-1f9d-4db9-9577-39e792a7ed3b-1680159381bd4e3674-2": {
-          "type": "logo",
-          "settings": {
-            "link": ""
-          }
-        },
-        "template--18400919191846__c080b478-1f9d-4db9-9577-39e792a7ed3b-1680159381bd4e3674-3": {
-          "type": "logo",
-          "settings": {
-            "link": ""
-          }
-        },
-        "template--18400919191846__c080b478-1f9d-4db9-9577-39e792a7ed3b-1680159381bd4e3674-4": {
-          "type": "logo",
-          "settings": {
-            "link": ""
-          }
-        },
-        "template--18400919191846__c080b478-1f9d-4db9-9577-39e792a7ed3b-1680159381bd4e3674-5": {
-          "type": "logo",
-          "settings": {
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--18400919191846__c080b478-1f9d-4db9-9577-39e792a7ed3b-1680159381bd4e3674-0",
-        "template--18400919191846__c080b478-1f9d-4db9-9577-39e792a7ed3b-1680159381bd4e3674-1",
-        "template--18400919191846__c080b478-1f9d-4db9-9577-39e792a7ed3b-1680159381bd4e3674-2",
-        "template--18400919191846__c080b478-1f9d-4db9-9577-39e792a7ed3b-1680159381bd4e3674-3",
-        "template--18400919191846__c080b478-1f9d-4db9-9577-39e792a7ed3b-1680159381bd4e3674-4",
-        "template--18400919191846__c080b478-1f9d-4db9-9577-39e792a7ed3b-1680159381bd4e3674-5"
-      ],
-      "settings": {
-        "title": "Logo list",
-        "link_title": "",
-        "link": ""
-      }
-    },
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
@@ -393,7 +339,6 @@
   },
   "order": [
     "slideshow",
-    "c080b478-1f9d-4db9-9577-39e792a7ed3b",
     "featured-collection",
     "ffcf066a-079b-4e0b-b9e9-27b7e92b41b7",
     "collection-list",
