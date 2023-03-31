@@ -94,7 +94,7 @@
             "overlay_opacity": 50,
             "stretch_image": false,
             "background": "#e1e3e4",
-            "text_color": "#3a2a2e",
+            "text_color": "#ff0000",
             "title": "特集ページへの導線として",
             "content": "<p>・推奨画像サイズは800 x 800px .pngです。<\/p><p>・この画像は推奨サイズに加工してますが、おそらく背景透過画像が適しています。<\/p>",
             "content_position": "top_left",
