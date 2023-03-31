@@ -153,8 +153,9 @@
         "template--18400919191846__ffcf066a-079b-4e0b-b9e9-27b7e92b41b7-168015942684ed4673-0": {
           "type": "offer",
           "settings": {
-            "title": "Your text",
-            "content": "<p>Write a few words about your offers or your shop.<\/p>"
+            "image": "shopify:\/\/shop_images\/pressdainitan001.webp",
+            "title": "今だけ50パーセントオフ！",
+            "content": "<p>ここに詳細説明。<\/p><p>aタグを用いてリンクを貼れます。<\/p>"
           }
         },
         "template--18400919191846__ffcf066a-079b-4e0b-b9e9-27b7e92b41b7-168015942684ed4673-1": {
