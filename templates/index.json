@@ -11,12 +11,12 @@
             "overlay_opacity": 30,
             "text_color": "#000000",
             "title": "スライドは何枚でも追加できます（最大4枚程度推奨）",
-            "content": "・バナー or ボタンにリンクを設置できます。\n・2160 x 720px .jpg（pc）\n・750 x 1100px .jpg（モバイル）",
+            "content": "・バナー or ボタンにリンクを設置できます。\n・このスライドではボタンを配置しています。\n・リンクはshopifyでも外部リンクも可能です。\n・2160 x 720px .jpg（pc）\n・750 x 1100px .jpg（モバイル）",
             "content_position": "top_left",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "button_text": "ボタン",
-            "link": ""
+            "button_background": "#3a2a2e",
+            "button_text_color": "#ffffff",
+            "button_text": "楽天市場へ飛ぶボタン",
+            "link": "https:\/\/www.rakuten.co.jp\/goodlifeinterior01\/"
           }
         },
         "slide-2": {
