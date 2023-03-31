@@ -324,7 +324,7 @@
     "newsletter": {
       "type": "newsletter",
       "settings": {
-        "title": "Newsletter",
+        "title": "Newsletter（メルマガ登録導線です）",
         "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>",
         "background": "#1e2d7d",
         "text": "#ffffff"
