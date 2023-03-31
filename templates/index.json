@@ -375,8 +375,8 @@
           "type": "item",
           "settings": {
             "icon": "bi-secure-payment",
-            "title": "Secure payments",
-            "content": "<p>Short content about your store<\/p>"
+            "title": "安全な決済",
+            "content": "<p>クレジットカードのセキュリティはSSLというシステムを利用しております。 カード番号は暗号化されて安全に送信されますので、どうぞご安心ください。<\/p>"
           }
         }
       },
