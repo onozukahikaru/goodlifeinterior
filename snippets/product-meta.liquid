@@ -30,6 +30,9 @@
 <div class="product-meta">
   {%- if template.name == 'product' and template != 'product.quick-view' -%}
     <h1 class="product-meta__title heading h1">{{ product.title }}</h1>
+    <p>
+      <a href="{{ product.type | url_for_type }}">商品タイプ：{{ product.type }}</a>
+    </p>
   {%- else -%}
     <h3 class="product-meta__title heading h2">
       <a href="{{ product.url }}">{{ product.title }}</a>
@@ -77,22 +80,36 @@
         {%- assign collection_for_vendor = collections[vendor_handle] -%}
 
         {%- unless collection_for_vendor.empty? -%}
-          <a class="product-meta__vendor link link--accented" href="{{ collection_for_vendor.url }}">{{ product.vendor }}</a>
+          <a class="product-meta__vendor link link--accented" href="{{ collection_for_vendor.url }}">
+            {{- product.vendor -}}
+          </a>
         {%- else -%}
-          <a class="product-meta__vendor link link--accented" href="{{ product.vendor | url_for_vendor }}">{{ product.vendor }}</a>
+          <a class="product-meta__vendor link link--accented" href="{{ product.vendor | url_for_vendor }}">
+            {{- product.vendor -}}
+          </a>
         {%- endunless -%}
       {%- endif -%}
 
       {%- if block.settings.show_sku -%}
-        <span class="product-meta__sku" {% if selected_variant.sku == blank %}style="display: none"{% endif %}>
-          {{- 'product.general.sku' | t -}} <span class="product-meta__sku-number">{{ selected_variant.sku }}</span>
+        <span
+          class="product-meta__sku"
+          {% if selected_variant.sku == blank %}
+            style="display: none"
+          {% endif %}
+        >
+          {{- 'product.general.sku' | t -}}
+          <span class="product-meta__sku-number">{{ selected_variant.sku }}</span>
         </span>
       {%- endif -%}
     </div>
   {%- endif -%}
 
   {%- if block.settings.show_reviews_badge -%}
-    <a href="{% if template.name != 'product' or template == 'product.quick-view' %}{{ product.url }}{% endif %}#product-reviews" class="product-meta__reviews-badge link" data-offset="30">
+    <a
+      href="{% if template.name != 'product' or template == 'product.quick-view' %}{{ product.url }}{% endif %}#product-reviews"
+      class="product-meta__reviews-badge link"
+      data-offset="30"
+    >
       {%- render 'product-rating', product: product -%}
     </a>
   {%- endif -%}

@@ -9,7 +9,10 @@
 
       {%- assign option_selector_type = 'select' -%}
 
-      {%- if block.settings.color_mode != 'block' and block.settings.color_mode != 'dropdown' and color_label contains downcase_option -%}
+      {%- if block.settings.color_mode != 'block'
+        and block.settings.color_mode != 'dropdown'
+        and color_label contains downcase_option
+      -%}
         {%- comment -%}NOTE: even if the merchant is using the mode to display variant images, if ALL variant do not have an associated image, we fallback to color{%- endcomment -%}
 
         {%- assign has_image_attached_to_all_variants = true -%}
@@ -39,7 +42,9 @@
       <div class="product-form__option" data-selector-type="{{ option_selector_type }}">
         {%- case option_selector_type -%}
           {%- when 'color' -%}
-            <span class="product-form__option-name text--strong">{{ option.name }}: <span class="product-form__selected-value">{{ option.selected_value }}</span></span>
+            <span class="product-form__option-name text--strong">
+              {{- option.name }}: <span class="product-form__selected-value">{{ option.selected_value }}</span></span
+            >
 
             <div class="color-swatch-list color-swatch-list--large">
               {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
@@ -49,8 +54,23 @@
                 {%- capture color_id -%}{{ option_name }}-{{ forloop.index }}{%- endcapture -%}
 
                 <div class="color-swatch {% if downcased_value == 'white' or downcased_value == 'blanc' %}color-swatch--white{% endif %}">
-                  <input class="color-swatch__radio product-form__single-selector" type="radio" name="{{ option_name }}" id="{{ color_id }}" value="{{ value | escape }}" {% if option.selected_value == value %}checked{% endif %} data-option-position="{{ option.position }}">
-                  <label class="color-swatch__item" for="{{ color_id }}" style="{% render 'color-swatch-style', color_swatch_config: color_swatch_config, value: downcased_value %}" title="{{ value | escape }}">
+                  <input
+                    class="color-swatch__radio product-form__single-selector"
+                    type="radio"
+                    name="{{ option_name }}"
+                    id="{{ color_id }}"
+                    value="{{ value | escape }}"
+                    {% if option.selected_value == value %}
+                      checked
+                    {% endif %}
+                    data-option-position="{{ option.position }}"
+                  >
+                  <label
+                    class="color-swatch__item"
+                    for="{{ color_id }}"
+                    style="{% render 'color-swatch-style', color_swatch_config: color_swatch_config, value: downcased_value %}"
+                    title="{{ value | escape }}"
+                  >
                     <span class="visually-hidden">{{ value }}</span>
                     {%- render 'icon', icon: 'cross-sold-out' -%}
                   </label>
@@ -59,7 +79,9 @@
             </div>
 
           {%- when 'variant' -%}
-            <span class="product-form__option-name text--strong">{{ option.name }}: <span class="product-form__selected-value">{{ option.selected_value }}</span></span>
+            <span class="product-form__option-name text--strong">
+              {{- option.name }}: <span class="product-form__selected-value">{{ option.selected_value }}</span></span
+            >
 
             <div class="variant-swatch-list">
               {%- capture option_name -%}option{{ option.position }}{%- endcapture -%}
@@ -70,11 +92,28 @@
                 {%- for variant in product.variants -%}
                   {%- if variant[option_name] == value and variant.image -%}
                     <div class="variant-swatch">
-                      <input class="variant-swatch__radio product-form__single-selector" type="radio" name="{{ option_name }}" id="{{ variant_swatch_id }}" value="{{ value | escape }}" {% if option.selected_value == value %}checked{% endif %} data-option-position="{{ option.position }}">
+                      <input
+                        class="variant-swatch__radio product-form__single-selector"
+                        type="radio"
+                        name="{{ option_name }}"
+                        id="{{ variant_swatch_id }}"
+                        value="{{ value | escape }}"
+                        {% if option.selected_value == value %}
+                          checked
+                        {% endif %}
+                        data-option-position="{{ option.position }}"
+                      >
 
                       <label class="variant-swatch__item" for="{{ variant_swatch_id }}" title="{{ value | escape }}">
-                        <div class="aspect-ratio" style="padding-bottom: {{ 100.0 | divided_by: variant.image.aspect_ratio }}%">
-                          {{- variant.image | image_url: width: variant.image.width | image_tag: loading: 'lazy', sizes: '120px', widths: '120,240' -}}
+                        <div
+                          class="aspect-ratio"
+                          style="padding-bottom: {{ 100.0 | divided_by: variant.image.aspect_ratio }}%"
+                        >
+                          {{-
+                            variant.image
+                            | image_url: width: variant.image.width
+                            | image_tag: loading: 'lazy', sizes: '120px', widths: '120,240'
+                          -}}
                         </div>
 
                         {% render 'icon', icon: 'cross-sold-out' %}
@@ -88,14 +127,26 @@
             </div>
 
           {%- when 'block' -%}
-            <span class="product-form__option-name text--strong">{{ option.name }}: <span class="product-form__selected-value">{{ option.selected_value }}</span></span>
+            <span class="product-form__option-name text--strong">
+              {{- option.name }}: <span class="product-form__selected-value">{{ option.selected_value }}</span></span
+            >
 
             <div class="block-swatch-list">
               {%- for value in option.values -%}
                 {%- capture block_swatch_id -%}{{ option_name }}-{{ forloop.index }}{%- endcapture -%}
 
                 <div class="block-swatch">
-                  <input class="block-swatch__radio product-form__single-selector" type="radio" name="{{ option_name }}" id="{{ block_swatch_id }}" value="{{ value | escape }}" {% if option.selected_value == value %}checked{% endif %} data-option-position="{{ option.position }}">
+                  <input
+                    class="block-swatch__radio product-form__single-selector"
+                    type="radio"
+                    name="{{ option_name }}"
+                    id="{{ block_swatch_id }}"
+                    value="{{ value | escape }}"
+                    {% if option.selected_value == value %}
+                      checked
+                    {% endif %}
+                    data-option-position="{{ option.position }}"
+                  >
                   <label class="block-swatch__item" for="{{ block_swatch_id }}" title="{{ value | escape }}">
                     <span class="block-swatch__item-text">{{ value }}</span>
                   </label>
@@ -104,14 +155,28 @@
             </div>
 
           {%- when 'select' -%}
-            <label for="{{ option_name }}" class="product-form__option-name text--strong">{{ option.name }}: <span class="product-form__selected-value">{{ option.selected_value }}</span></label>
+            <label for="{{ option_name }}" class="product-form__option-name text--strong">
+              {{- option.name }}: <span class="product-form__selected-value">{{ option.selected_value }}</span></label
+            >
 
             <div class="select-wrapper select-wrapper--primary">
               {%- render 'icon', icon: 'arrow-bottom' -%}
 
-              <select class="product-form__single-selector" name="{{ option_name }}" id="{{ option_name }}" data-option-position="{{ option.position }}">
+              <select
+                class="product-form__single-selector"
+                name="{{ option_name }}"
+                id="{{ option_name }}"
+                data-option-position="{{ option.position }}"
+              >
                 {%- for value in option.values -%}
-                  <option value="{{ value | escape }}" {% if value == option.selected_value %}selected="selected"{% endif %}>{{ value }}</option>
+                  <option
+                    value="{{ value | escape }}"
+                    {% if value == option.selected_value %}
+                      selected="selected"
+                    {% endif %}
+                  >
+                    {{ value }}
+                  </option>
                 {%- endfor -%}
               </select>
             </div>
@@ -120,12 +185,25 @@
     {%- endfor -%}
 
     <div class="no-js product-form__option">
-      <label class="product-form__option-name text--strong" for="product-select-{{ product.id }}">{{ 'product.form.variant' | t }}</label>
+      <label class="product-form__option-name text--strong" for="product-select-{{ product.id }}">
+        {{- 'product.form.variant' | t -}}
+      </label>
 
       <div class="select-wrapper select-wrapper--primary">
         <select id="product-select-{{ product.id }}" name="id">
           {%- for variant in product.variants -%}
-            <option {% if variant == selected_variant %}selected="selected"{% endif %} {% unless variant.available %}disabled="disabled"{% endunless %} value="{{ variant.id }}" data-sku="{{ variant.sku }}">{{ variant.title }} - {{ variant.price | money }}</option>
+            <option
+              {% if variant == selected_variant %}
+                selected="selected"
+              {% endif %}
+              {% unless variant.available %}
+                disabled="disabled"
+              {% endunless %}
+              value="{{ variant.id }}"
+              data-sku="{{ variant.sku }}"
+            >
+              {{ variant.title }} - {{ variant.price | money }}
+            </option>
           {%- endfor -%}
         </select>
       </div>
@@ -174,16 +252,28 @@
         {%- endif -%}
       </div>
 
-      <div class="product-form__price-info" style="display: {% if selected_variant.unit_price_measurement %}block{% else %}none{% endif %}">
+      <p>価格文言：{{ product.metafields.custom['_dual-pricing-statement'] }}</p>
+
+      <div
+        class="product-form__price-info"
+        style="display: {% if selected_variant.unit_price_measurement %}block{% else %}none{% endif %}"
+      >
         <div class="unit-price-measurement">
           <span class="unit-price-measurement__price">{{ selected_variant.unit_price | money }}</span>
           <span class="unit-price-measurement__separator">/ </span>
 
-          <span class="unit-price-measurement__reference-value" {%- if selected_variant.unit_price_measurement.reference_value == 1 -%}style="display: none"{% endif %}>
+          <span
+            class="unit-price-measurement__reference-value"
+            {%- if selected_variant.unit_price_measurement.reference_value == 1 -%}
+              style="display: none"
+            {% endif %}
+          >
             {{- selected_variant.unit_price_measurement.reference_value -}}
           </span>
 
-          <span class="unit-price-measurement__reference-unit">{{ selected_variant.unit_price_measurement.reference_unit }}</span>
+          <span class="unit-price-measurement__reference-unit">
+            {{- selected_variant.unit_price_measurement.reference_unit -}}
+          </span>
         </div>
       </div>
 
@@ -215,15 +305,23 @@
             {%- if selected_variant.inventory_quantity <= 0 and selected_variant.requires_shipping -%}
               {%- if selected_variant.incoming -%}
                 {%- capture next_incoming_date -%}{{ selected_variant.next_incoming_date | date: format: 'date' }}{%- endcapture -%}
-                <span class="product-form__inventory inventory inventory--high">{{ 'product.form.incoming_stock' | t: next_incoming_date: next_incoming_date }}</span>
+                <span class="product-form__inventory inventory inventory--high">
+                  {{- 'product.form.incoming_stock' | t: next_incoming_date: next_incoming_date -}}
+                </span>
               {%- else -%}
-                <span class="product-form__inventory inventory inventory--high">{{ 'product.form.oversell_stock' | t }}</span>
+                <span class="product-form__inventory inventory inventory--high">
+                  {{- 'product.form.oversell_stock' | t -}}
+                </span>
               {%- endif -%}
             {%- elsif block.settings.low_inventory_threshold > 0 -%}
               {%- if selected_variant.inventory_quantity <= block.settings.low_inventory_threshold -%}
-                <span class="product-form__inventory inventory inventory--low">{{ 'product.form.low_stock_with_quantity_count' | t: count: selected_variant.inventory_quantity }}</span>
+                <span class="product-form__inventory inventory inventory--low">
+                  {{- 'product.form.low_stock_with_quantity_count' | t: count: selected_variant.inventory_quantity -}}
+                </span>
               {%- else -%}
-                <span class="product-form__inventory inventory inventory--high">{{ 'product.form.in_stock_with_quantity_count' | t: count: selected_variant.inventory_quantity }}</span>
+                <span class="product-form__inventory inventory inventory--high">
+                  {{- 'product.form.in_stock_with_quantity_count' | t: count: selected_variant.inventory_quantity -}}
+                </span>
               {%- endif -%}
             {%- else -%}
               <span class="product-form__inventory inventory inventory--high">{{ 'product.form.in_stock' | t }}</span>
@@ -231,7 +329,9 @@
           {%- else -%}
             {%- if selected_variant.incoming -%}
               {%- capture next_incoming_date -%}{{ selected_variant.next_incoming_date | date: format: 'date' }}{%- endcapture -%}
-              <span class="product-form__inventory inventory">{{ 'product.form.incoming_stock' | t: next_incoming_date: next_incoming_date }}</span>
+              <span class="product-form__inventory inventory">
+                {{- 'product.form.incoming_stock' | t: next_incoming_date: next_incoming_date -}}
+              </span>
             {%- else -%}
               <span class="product-form__inventory inventory">{{ 'product.form.sold_out' | t }}</span>
             {%- endif -%}
@@ -243,9 +343,17 @@
         {%- for tag in product.tags -%}
           {%- if tag contains '__stock:' -%}
             {%- assign stock_countdown_max = tag | split: '__stock:' | last | times: 1.0 -%}
-            {%- assign stock_countdown_progress = selected_variant.inventory_quantity | divided_by: stock_countdown_max | times: 100.0 | at_least: 0 | at_most: 100 -%}
+            {%- assign stock_countdown_progress = selected_variant.inventory_quantity
+              | divided_by: stock_countdown_max
+              | times: 100.0
+              | at_least: 0
+              | at_most: 100
+            -%}
 
-            <span class="inventory-bar {% if stock_countdown_progress == 0 %}inventory-bar--hidden{% endif %}" data-stock-countdown-max="{{ stock_countdown_max }}">
+            <span
+              class="inventory-bar {% if stock_countdown_progress == 0 %}inventory-bar--hidden{% endif %}"
+              data-stock-countdown-max="{{ stock_countdown_max }}"
+            >
               <span class="inventory-bar__progress" style="width: 100%"></span>
             </span>
 
@@ -259,13 +367,38 @@
   {%- if product.template_suffix != 'contact' -%}
     {%- if block.settings.show_quantity_selector -%}
       <div class="product-form__info-item product-form__info-item--quantity">
-        <label for="{{ section.id }}-{{ product.id }}-quantity" class="product-form__info-title text--strong">{{ 'product.form.quantity' | t }}:</label>
+        <label for="{{ section.id }}-{{ product.id }}-quantity" class="product-form__info-title text--strong">
+          {{- 'product.form.quantity' | t }}:</label
+        >
 
         <div class="product-form__info-content">
           <div class="quantity-selector quantity-selector--product">
-            <button type="button" class="quantity-selector__button" data-action="decrease-picker-quantity" aria-label="{{ 'cart.items.decrease_quantity' | t }}" title="{{ 'cart.items.decrease_quantity' | t }}">{% render 'icon', icon: 'minus' %}</button>
-            <input name="quantity" aria-label="{{ 'product.form.quantity' | t }}" class="quantity-selector__value" inputmode="numeric" value="1" size="3">
-            <button type="button" class="quantity-selector__button" data-action="increase-picker-quantity" aria-label="{{ 'cart.items.increase_quantity' | t }}" title="{{ 'cart.items.increase_quantity' | t }}">{% render 'icon', icon: 'plus' %}</button>
+            <button
+              type="button"
+              class="quantity-selector__button"
+              data-action="decrease-picker-quantity"
+              aria-label="{{ 'cart.items.decrease_quantity' | t }}"
+              title="{{ 'cart.items.decrease_quantity' | t }}"
+            >
+              {% render 'icon', icon: 'minus' %}
+            </button>
+            <input
+              name="quantity"
+              aria-label="{{ 'product.form.quantity' | t }}"
+              class="quantity-selector__value"
+              inputmode="numeric"
+              value="1"
+              size="3"
+            >
+            <button
+              type="button"
+              class="quantity-selector__button"
+              data-action="increase-picker-quantity"
+              aria-label="{{ 'cart.items.increase_quantity' | t }}"
+              title="{{ 'cart.items.increase_quantity' | t }}"
+            >
+              {% render 'icon', icon: 'plus' %}
+            </button>
           </div>
         </div>
       </div>
