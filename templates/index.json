@@ -161,8 +161,9 @@
         "template--18400919191846__ffcf066a-079b-4e0b-b9e9-27b7e92b41b7-168015942684ed4673-1": {
           "type": "offer",
           "settings": {
-            "title": "Your text",
-            "content": "<p>Write a few words about your offers or your shop.<\/p>"
+            "image": "shopify:\/\/shop_images\/charry105001.webp",
+            "title": "白こたつ入荷しました",
+            "content": "<p>白基調のお部屋にぴったりです♪<\/p>"
           }
         }
       },
