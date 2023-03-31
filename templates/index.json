@@ -258,8 +258,8 @@
     "1f9b1e04-4427-4dda-b99e-77ece14976f9": {
       "type": "featured-collection",
       "settings": {
-        "collection": "",
-        "title": "Featured collection",
+        "collection": "good-life-interior",
+        "title": "Featured collection（おすすめコレクションに所属する商品を表示できます。現在はオリジナルのコレクションを用意し、3商品表示しています。）",
         "products_count": 6,
         "layout": "collage",
         "stack_products": false,
