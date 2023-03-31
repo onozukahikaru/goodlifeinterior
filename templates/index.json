@@ -82,6 +82,72 @@
         "cycle_speed": 5
       }
     },
+    "89353e6e-f2dd-40d0-a545-859d170c6a69": {
+      "type": "promotion-list",
+      "blocks": {
+        "template--18400919191846__89353e6e-f2dd-40d0-a545-859d170c6a69-168023880335a49de9-0": {
+          "type": "item",
+          "settings": {
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "stretch_image": false,
+            "background": "#6f42ef",
+            "text_color": "#ffffff",
+            "title": "Your heading",
+            "content": "<p>Tell more about your product, collection...<\/p>",
+            "content_position": "top_left",
+            "button_background": "#ffffff",
+            "button_text_color": "#6f42ef",
+            "button_text": "Learn more",
+            "button_link": ""
+          }
+        },
+        "template--18400919191846__89353e6e-f2dd-40d0-a545-859d170c6a69-168023880335a49de9-1": {
+          "type": "item",
+          "settings": {
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "stretch_image": false,
+            "background": "#fc2a68",
+            "text_color": "#ffffff",
+            "title": "Your heading",
+            "content": "<p>Tell more about your product, collection...<\/p>",
+            "content_position": "top_left",
+            "button_background": "#ffffff",
+            "button_text_color": "#fc2a68",
+            "button_text": "Learn more",
+            "button_link": ""
+          }
+        },
+        "template--18400919191846__89353e6e-f2dd-40d0-a545-859d170c6a69-168023880335a49de9-2": {
+          "type": "item",
+          "settings": {
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "stretch_image": false,
+            "background": "#26c1ce",
+            "text_color": "#ffffff",
+            "title": "Your heading",
+            "content": "<p>Tell more about your product, collection...<\/p>",
+            "content_position": "top_left",
+            "button_background": "#ffffff",
+            "button_text_color": "#26c1ce",
+            "button_text": "Learn more",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18400919191846__89353e6e-f2dd-40d0-a545-859d170c6a69-168023880335a49de9-0",
+        "template--18400919191846__89353e6e-f2dd-40d0-a545-859d170c6a69-168023880335a49de9-1",
+        "template--18400919191846__89353e6e-f2dd-40d0-a545-859d170c6a69-168023880335a49de9-2"
+      ],
+      "settings": {
+        "expand_items": false,
+        "section_size": "medium",
+        "stack_mobile": false
+      }
+    },
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
@@ -339,6 +405,7 @@
   },
   "order": [
     "slideshow",
+    "89353e6e-f2dd-40d0-a545-859d170c6a69",
     "featured-collection",
     "ffcf066a-079b-4e0b-b9e9-27b7e92b41b7",
     "collection-list",
