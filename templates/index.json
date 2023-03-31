@@ -231,7 +231,7 @@
         "collection-6"
       ],
       "settings": {
-        "title": "Our collections",
+        "title": "Our collections（選択したコレクション or 全コレクションを表示可能です。現在は3コレクション表示しています。）",
         "link_title": "View all",
         "link": "shopify:\/\/collections",
         "round_images": true,
