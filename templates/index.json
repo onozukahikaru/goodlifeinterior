@@ -89,13 +89,14 @@
         "template--18400919191846__89353e6e-f2dd-40d0-a545-859d170c6a69-168023880335a49de9-1": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/3bb42e6e1b42b75c3008408f45f5a2ae_611cf3f6-acd4-4b6f-bfb7-4706b5b59ae2.png",
             "show_overlay": false,
             "overlay_opacity": 50,
             "stretch_image": false,
-            "background": "#fc2a68",
-            "text_color": "#ffffff",
-            "title": "Your heading",
-            "content": "<p>Tell more about your product, collection...<\/p>",
+            "background": "#e1e3e4",
+            "text_color": "#3a2a2e",
+            "title": "特集ページへの導線として",
+            "content": "<p>・推奨画像サイズは800 x 800px .pngです。<\/p><p>・この画像は推奨サイズに加工してますが、おそらく背景透過画像が適しています。<\/p>",
             "content_position": "top_left",
             "button_background": "#ffffff",
             "button_text_color": "#fc2a68",
