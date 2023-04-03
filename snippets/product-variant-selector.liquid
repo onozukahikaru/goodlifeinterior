@@ -230,17 +230,7 @@
             {%- endif -%}
           </span>
 
-          <style>
-            .price.price--compare {
-              display: flex;
-            }
-            .metafield-single_line_text_field {
-              list-style: none;
-            }
-          </style>
-
           <span class="price price--compare">
-            {{ product.metafields.custom['_dual-pricing-statement'] | metafield_tag }}
             <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
 
             {%- if settings.currency_code_enabled -%}
