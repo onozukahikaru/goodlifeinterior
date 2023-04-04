@@ -230,15 +230,17 @@
             {%- endif -%}
           </span>
 
-          <span class="price price--compare">
-            <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
+          {% comment %}
+             <span class="price price--compare">
+              <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
 
-            {%- if settings.currency_code_enabled -%}
-              {{- selected_variant.compare_at_price | money_with_currency -}}
-            {%- else -%}
-              {{- selected_variant.compare_at_price | money -}}
-            {%- endif -%}
-          </span>
+              {%- if settings.currency_code_enabled -%}
+                {{- selected_variant.compare_at_price | money_with_currency -}}
+              {%- else -%}
+                {{- selected_variant.compare_at_price | money -}}
+              {%- endif -%}
+            </span>
+          {% endcomment %}
         {%- else -%}
           <span class="price">
             <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
