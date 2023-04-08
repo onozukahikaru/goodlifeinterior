@@ -318,15 +318,15 @@
     "blog-posts": {
       "type": "blog-posts",
       "settings": {
-        "blog": "",
+        "blog": "news",
         "blog_posts_count": 3,
-        "title": "Blog posts",
+        "title": "新着情報",
         "link_title": "View all",
         "show_category": true,
-        "show_author": true,
+        "show_author": false,
         "show_date": true,
         "show_excerpt": false,
-        "stack_mobile": false
+        "stack_mobile": true
       }
     },
     "e28f2f05-13eb-45b6-88ca-f0a93de52e76": {
