@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+body{
+  font-family: 'Poppins', 'Noto Sans JP', sans-serif;
+}
+.price{
+  color: #333333;
+  font-family: 'Poppins', sans-serif;
+}
+.price--highlight{
+  color: var(--product-on-sale-accent);
+}
