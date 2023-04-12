@@ -8,7 +8,7 @@
         "background": "#d5c8b0",
         "text_color": "#ffffff",
         "text": "全商品送料無料",
-        "text_position": "left",
+        "text_position": "center",
         "link": "",
         "show_newsletter": false,
         "newsletter_button": "Subscribe & Save",
