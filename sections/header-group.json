@@ -5,7 +5,7 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "settings": {
-        "background": "#3a2a2e",
+        "background": "#d5c8b0",
         "text_color": "#ffffff",
         "text": "Announce something here",
         "text_position": "left",
