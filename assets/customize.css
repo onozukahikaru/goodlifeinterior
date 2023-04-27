@@ -1,2 +1,29 @@
 @charset "utf-8";
+/* タイトルh3 */
+.page__content h3 {
+  position: relative;
+  padding-left: 16px;
+}
+.page__content h3::before {
+  content: "";
+  background: #3a2a2f;
+  width: 4px;
+  height: 22px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
 
+/* table */
+td.bg{
+  background: #f1ece8;
+  text-align: center;
+}
+@media screen and (min-width: 769px){
+  table.hours {
+    width: 278px;
+  }
+}
