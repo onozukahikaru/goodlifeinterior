@@ -27,3 +27,24 @@ td.bg{
     width: 278px;
   }
 }
+
+.about dl{
+  display: flex;
+  flex-direction: column;
+}
+.about dl dd{
+  margin-left: 0;
+}
+@media screen and (min-width: 769px){
+  table.hours {
+    width: 278px;
+  }
+  .about dl{
+    flex-direction: row;
+    border-bottom: 1px solid #e7e2de;
+    padding-bottom: 1rem;
+  }
+  .about dl dt {
+    min-width: 300px;
+  }
+}
