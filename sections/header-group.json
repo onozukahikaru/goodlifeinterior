@@ -21,6 +21,7 @@
       "type": "header",
       "settings": {
         "enable_sticky_header": true,
+        "logo": "{{ shop.brand.logo }}",
         "logo_max_width": 140,
         "mobile_logo_max_width": 100,
         "show_locale_selector": true,
