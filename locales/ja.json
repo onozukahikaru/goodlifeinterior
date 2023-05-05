@@ -494,5 +494,12 @@
     "month_day_year": "%Y年%B%d日",
     "short_month_day_year": "%Y年%B%d日",
     "month_day_year_time": "%Y年%B%d日　%l時%M分"
+  },
+  "shopify": {
+    "checkout": {
+      "payment": {
+        "different_billing_address_label": "違う住所を使う"
+      }
+    }
   }
 }
