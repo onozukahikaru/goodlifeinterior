@@ -52,11 +52,10 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "footer-0": {
-          "type": "text",
+        "04dfcdd3-8cbc-4b42-af21-275cae10c7c3": {
+          "type": "links",
           "settings": {
-            "title": "About the shop",
-            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>"
+            "menu": "search-products"
           }
         },
         "b5908bbb-6c62-4340-a5b3-c4f882e5deb6": {
@@ -70,19 +69,12 @@
           "settings": {
             "menu": "policy"
           }
-        },
-        "04dfcdd3-8cbc-4b42-af21-275cae10c7c3": {
-          "type": "links",
-          "settings": {
-            "menu": "search-products"
-          }
         }
       },
       "block_order": [
-        "footer-0",
+        "04dfcdd3-8cbc-4b42-af21-275cae10c7c3",
         "b5908bbb-6c62-4340-a5b3-c4f882e5deb6",
-        "footer-1",
-        "04dfcdd3-8cbc-4b42-af21-275cae10c7c3"
+        "footer-1"
       ],
       "settings": {
         "show_social_media": true,
