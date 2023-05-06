@@ -62,13 +62,20 @@
         "footer-1": {
           "type": "links",
           "settings": {
-            "menu": "footer"
+            "menu": "policy"
+          }
+        },
+        "b5908bbb-6c62-4340-a5b3-c4f882e5deb6": {
+          "type": "links",
+          "settings": {
+            "menu": "information"
           }
         }
       },
       "block_order": [
         "footer-0",
-        "footer-1"
+        "footer-1",
+        "b5908bbb-6c62-4340-a5b3-c4f882e5deb6"
       ],
       "settings": {
         "show_social_media": true,
