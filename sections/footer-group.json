@@ -59,23 +59,30 @@
             "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>"
           }
         },
+        "b5908bbb-6c62-4340-a5b3-c4f882e5deb6": {
+          "type": "links",
+          "settings": {
+            "menu": "information"
+          }
+        },
         "footer-1": {
           "type": "links",
           "settings": {
             "menu": "policy"
           }
         },
-        "b5908bbb-6c62-4340-a5b3-c4f882e5deb6": {
+        "04dfcdd3-8cbc-4b42-af21-275cae10c7c3": {
           "type": "links",
           "settings": {
-            "menu": "information"
+            "menu": "search-products"
           }
         }
       },
       "block_order": [
         "footer-0",
+        "b5908bbb-6c62-4340-a5b3-c4f882e5deb6",
         "footer-1",
-        "b5908bbb-6c62-4340-a5b3-c4f882e5deb6"
+        "04dfcdd3-8cbc-4b42-af21-275cae10c7c3"
       ],
       "settings": {
         "show_social_media": true,
