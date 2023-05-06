@@ -52,6 +52,13 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "3d603f46-81bd-46ec-99db-26649000d08d": {
+          "type": "text",
+          "settings": {
+            "title": "当社について",
+            "content": "<p><strong>私たちは創業以来50年以上にわたり培ってきた経験とノウハウを基に、こたつの製造に携わってまいりました。お客様のご要望と市場の流れを捉え、最適な商品作りと対応力がわたしたちの強みです。<\/strong><\/p>"
+          }
+        },
         "04dfcdd3-8cbc-4b42-af21-275cae10c7c3": {
           "type": "links",
           "settings": {
@@ -72,6 +79,7 @@
         }
       },
       "block_order": [
+        "3d603f46-81bd-46ec-99db-26649000d08d",
         "04dfcdd3-8cbc-4b42-af21-275cae10c7c3",
         "b5908bbb-6c62-4340-a5b3-c4f882e5deb6",
         "footer-1"
