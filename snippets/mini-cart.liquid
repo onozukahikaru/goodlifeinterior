@@ -138,7 +138,7 @@
                       <span class="price price--highlight">{{ line_item.final_line_price | money }}</span>
                       {% comment %} <span class="price price--compare">{{ line_item.variant.compare_at_price | times: line_item.quantity | money }}</span> {% endcomment %}
                     {%- else -%}
-                      <span class="price">{{ line_item.final_line_price | money }}</span>
+                      <span class="price">{{ line_item.final_line_price | money }}</span><span class="tax">（税込）</span>
                     {%- endif -%}
                   </div>
 

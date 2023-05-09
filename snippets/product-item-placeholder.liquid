@@ -45,7 +45,7 @@
             <span class="price price--highlight">{{ random_price | money }}</span>
             {% comment %} <span class="price price--compare">{{ random_compare_at_price | money }}</span> {% endcomment %}
           {%- else -%}
-            <span class="price">{{ random_price | money }}</span>
+            <span class="price">{{ random_price | money }}</span><span class="tax">（税込）</span>
           {%- endif -%}
         </div>
       {%- endcapture -%}
