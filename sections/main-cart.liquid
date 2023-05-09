@@ -394,7 +394,7 @@
 
                     {%- if section.settings.enable_order_notes -%}
                       <div class="cart-recap__note">
-                        <button type="button" class="cart-recap__note-button" data-action="toggle-collapsible" data-collapsible-force-overflow aria-controls="order-note" aria-expanded="false">
+                        <button type="button" class="cart-recap__note-button" data-action="toggle-collapsible" data-collapsible-force-overflow aria-controls="order-note" aria-expanded="true">
                           {{- 'cart.general.note_title' | t -}}
                           <span>
                             <span class="cart-recap__note-edit {% if cart.note != blank %}is-visible{% endif %}">{{ 'cart.general.edit_note' | t }}</span>
@@ -402,7 +402,7 @@
                           </span>
                         </button>
 
-                        <div id="order-note" class="collapsible" aria-hidden="true">
+                        <div id="order-note" class="" aria-hidden="false">
                           <div class="cart-recap__note-inner">
                             <textarea name="note" class="form__field form__field--textarea" rows="3">{{ cart.note }}</textarea>
                             <button type="button" class="form__submit form__submit--tight button button--secondary" data-action="save-note">{{ 'cart.general.save_note' | t }}</button>
