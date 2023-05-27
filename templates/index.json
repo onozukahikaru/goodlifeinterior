@@ -124,18 +124,18 @@
         "template--18400919191846__89353e6e-f2dd-40d0-a545-859d170c6a69-168023880335a49de9-2": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/claud001.webp",
+            "image": "shopify:\/\/shop_images\/6.jpg",
             "show_overlay": true,
             "overlay_opacity": 50,
             "stretch_image": true,
             "background": "#ffffff",
             "text_color": "#333333",
-            "title": "コレクションのアピールなど",
-            "content": "<p>・画像をオーバーレイできます。<\/p>",
+            "title": "",
+            "content": "",
             "content_position": "bottom_left",
             "button_background": "#ff6128",
             "button_text_color": "#ffffff",
-            "button_text": "Learn more",
+            "button_text": "",
             "button_link": "shopify:\/\/collections\/こたつ"
           }
         }
