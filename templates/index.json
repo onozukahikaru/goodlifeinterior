@@ -114,10 +114,10 @@
             "text_color": "#3a2a2f",
             "title": "",
             "content": "",
-            "content_position": "top_left",
+            "content_position": "bottom_left",
             "button_background": "#3a2a2f",
             "button_text_color": "#ffffff",
-            "button_text": "Learn more",
+            "button_text": "",
             "button_link": ""
           }
         },
