@@ -1,13 +1,5 @@
 {
   "sections": {
-    "ee4fc8d5-fe91-4fad-9a36-47b744fb35da": {
-      "type": "custom-liquid",
-      "settings": {
-        "title": "",
-        "include_margins": true,
-        "liquid": "{% for link in linklists.main-menu.links %}\n  {% for collection in product.collections %}\n    {% if link.title == collection.title %}\n      <div>\n        {{ link.title }}\n        {% for sub_link in link.links %}\n          {% for collection in product.collections %}\n            {% if sub_link.title == collection.title %}\n              > {{ sub_link.title }}\n              {% for sub_sub_link in sub_link.links %}\n                {% for collection in product.collections %}\n                  {% if sub_sub_link.title == collection.title %} > {{ sub_sub_link.title }}{% endif %}\n                {% endfor %}\n              {% endfor %}\n            {% endif %}\n          {% endfor %}\n        {% endfor %}\n      <\/div>\n    {% endif %}\n  {% endfor %}\n{% endfor %}"
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -80,12 +72,20 @@
         "title": "Recently viewed",
         "show_quick_buy": false
       }
+    },
+    "ee4fc8d5-fe91-4fad-9a36-47b744fb35da": {
+      "type": "custom-liquid",
+      "settings": {
+        "title": "",
+        "include_margins": true,
+        "liquid": "{% for link in linklists.main-menu.links %}\n  {% for collection in product.collections %}\n    {% if link.title == collection.title %}\n      <div>\n        {{ link.title }}\n        {% for sub_link in link.links %}\n          {% for collection in product.collections %}\n            {% if sub_link.title == collection.title %}\n              > {{ sub_link.title }}\n              {% for sub_sub_link in sub_link.links %}\n                {% for collection in product.collections %}\n                  {% if sub_sub_link.title == collection.title %} > {{ sub_sub_link.title }}{% endif %}\n                {% endfor %}\n              {% endfor %}\n            {% endif %}\n          {% endfor %}\n        {% endfor %}\n      <\/div>\n    {% endif %}\n  {% endfor %}\n{% endfor %}"
+      }
     }
   },
   "order": [
-    "ee4fc8d5-fe91-4fad-9a36-47b744fb35da",
     "main",
     "product-recommendations",
-    "recently-viewed-products"
+    "recently-viewed-products",
+    "ee4fc8d5-fe91-4fad-9a36-47b744fb35da"
   ]
 }
