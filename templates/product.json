@@ -5,7 +5,7 @@
       "settings": {
         "title": "",
         "include_margins": true,
-        "liquid": "{% for link in linklists.main-menu.links %}\n  {% for collection in product.collections %}\n    {% if link.title == collection.title %}\n      {{ link.title }}\n      {% for sub_link in link.links %}\n        {% for collection in product.collections %}\n          {% if sub_link.title == collection.title %}\n             > {{ sub_link.title }}\n            {% for sub_sub_link in sub_link.links %}\n              {% for collection in product.collections %}\n                {% if sub_sub_link.title == collection.title %} > {{ sub_sub_link.title }}{% endif %}\n              {% endfor %}\n            {% endfor %}\n          {% endif %}\n        {% endfor %}\n      {% endfor %}\n    {% endif %}\n  {% endfor %}\n{% endfor %}"
+        "liquid": "{% for link in linklists.main-menu.links %}\n  {% for collection in product.collections %}\n    {% if link.title == collection.title %}\n      <div>\n        {{ link.title }}\n        {% for sub_link in link.links %}\n          {% for collection in product.collections %}\n            {% if sub_link.title == collection.title %}\n              > {{ sub_link.title }}\n              {% for sub_sub_link in sub_link.links %}\n                {% for collection in product.collections %}\n                  {% if sub_sub_link.title == collection.title %} > {{ sub_sub_link.title }}{% endif %}\n                {% endfor %}\n              {% endfor %}\n            {% endif %}\n          {% endfor %}\n        {% endfor %}\n      <\/div>\n    {% endif %}\n  {% endfor %}\n{% endfor %}"
       }
     },
     "main": {
