@@ -78,7 +78,7 @@
       "settings": {
         "title": "",
         "include_margins": true,
-        "liquid": "{% assign menu = linklists.main-menu %}\n{% for link in menu.links %}\n    {% if link.active or link.child_active %}{{ link.title }}{% endif %}\n    {% for sub_link in link.links %}\n      {% if sub_link.active or sub_link.child_active %} > {{ sub_link.title }}{% endif %}\n      {% for sub_sub_link in sub_link.links %}\n        {% if sub_sub_link.active %} > {{ sub_sub_link.title }}{% endif %}\n\t    {% endfor %}\n  {% endfor %}\n{% endfor %}"
+        "liquid": "{% for link in linklists.main-menu.links %}\n  {% for collection in product.collections %}\n    {% if link.title == collection.title %}{{ link.title }}{% endif %}\n  {% endfor %}\n  {% for sub_link in link.links %}\n    {% for collection in product.collections %}\n      {% if sub_link.title == collection.title %} > {{ sub_link.title }}{% endif %}\n    {% endfor %}\n    {% for sub_sub_link in sub_link.links %}\n      {% for collection in product.collections %}\n        {% if sub_sub_link.title == collection.title %} > {{ sub_sub_link.title }}{% endif %}\n        {% endfor %}\n    {% endfor %}\n  {% endfor %}\n{% endfor %}"
       }
     }
   },
