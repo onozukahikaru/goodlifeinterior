@@ -72,11 +72,20 @@
         "title": "Recently viewed",
         "show_quick_buy": false
       }
+    },
+    "ee4fc8d5-fe91-4fad-9a36-47b744fb35da": {
+      "type": "custom-liquid",
+      "settings": {
+        "title": "",
+        "include_margins": true,
+        "liquid": "{% assign menu = linklists.main-menu %}\n{% for link in menu.links %}\n    {% if link.active or link.child_active %}{{ link.title }}{% endif %}\n    {% for sub_link in link.links %}\n      {% if sub_link.active or sub_link.child_active %} > {{ sub_link.title }}{% endif %}\n      {% for sub_sub_link in sub_link.links %}\n        {% if sub_sub_link.active %} > {{ sub_sub_link.title }}{% endif %}\n\t    {% endfor %}\n  {% endfor %}\n{% endfor %}"
+      }
     }
   },
   "order": [
     "main",
     "product-recommendations",
-    "recently-viewed-products"
+    "recently-viewed-products",
+    "ee4fc8d5-fe91-4fad-9a36-47b744fb35da"
   ]
 }
