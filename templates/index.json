@@ -396,6 +396,7 @@
     },
     "blog-posts": {
       "type": "blog-posts",
+      "disabled": true,
       "settings": {
         "blog": "news",
         "blog_posts_count": 3,
@@ -410,6 +411,7 @@
     },
     "e28f2f05-13eb-45b6-88ca-f0a93de52e76": {
       "type": "text-with-icons",
+      "disabled": true,
       "blocks": {
         "template--18400919191846__e28f2f05-13eb-45b6-88ca-f0a93de52e76-1680159474a43e8cfc-0": {
           "type": "item",
