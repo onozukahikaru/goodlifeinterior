@@ -221,7 +221,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "link": "shopify:\/\/products\/2ss10000710"
+            "link": ""
           }
         },
         "collection-5": {
@@ -249,7 +249,7 @@
       ],
       "settings": {
         "title": "Our collections（選択したコレクション or 全コレクションを表示可能です。現在は3コレクション表示しています。）",
-        "link_title": "View all",
+        "link_title": "全て見る",
         "link": "shopify:\/\/collections",
         "round_images": true,
         "show_collection_title": true
