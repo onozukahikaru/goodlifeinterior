@@ -193,6 +193,68 @@
         "stack_mobile": false
       }
     },
+    "6b9c0c39-cb08-484a-b716-60f04673df96": {
+      "type": "collection-list",
+      "blocks": {
+        "template--18400919191846__6b9c0c39-cb08-484a-b716-60f04673df96-16855835696c655885-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "link": ""
+          }
+        },
+        "template--18400919191846__6b9c0c39-cb08-484a-b716-60f04673df96-16855835696c655885-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "link": ""
+          }
+        },
+        "template--18400919191846__6b9c0c39-cb08-484a-b716-60f04673df96-16855835696c655885-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "link": ""
+          }
+        },
+        "template--18400919191846__6b9c0c39-cb08-484a-b716-60f04673df96-16855835696c655885-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "link": ""
+          }
+        },
+        "template--18400919191846__6b9c0c39-cb08-484a-b716-60f04673df96-16855835696c655885-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "link": ""
+          }
+        },
+        "template--18400919191846__6b9c0c39-cb08-484a-b716-60f04673df96-16855835696c655885-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18400919191846__6b9c0c39-cb08-484a-b716-60f04673df96-16855835696c655885-0",
+        "template--18400919191846__6b9c0c39-cb08-484a-b716-60f04673df96-16855835696c655885-1",
+        "template--18400919191846__6b9c0c39-cb08-484a-b716-60f04673df96-16855835696c655885-2",
+        "template--18400919191846__6b9c0c39-cb08-484a-b716-60f04673df96-16855835696c655885-3",
+        "template--18400919191846__6b9c0c39-cb08-484a-b716-60f04673df96-16855835696c655885-4",
+        "template--18400919191846__6b9c0c39-cb08-484a-b716-60f04673df96-16855835696c655885-5"
+      ],
+      "settings": {
+        "title": "Our collections",
+        "link_title": "View all",
+        "link": "shopify:\/\/collections",
+        "round_images": false,
+        "show_collection_title": true
+      }
+    },
     "collection-list": {
       "type": "collection-list",
       "blocks": {
@@ -411,6 +473,7 @@
     "89353e6e-f2dd-40d0-a545-859d170c6a69",
     "featured-collection",
     "ffcf066a-079b-4e0b-b9e9-27b7e92b41b7",
+    "6b9c0c39-cb08-484a-b716-60f04673df96",
     "collection-list",
     "68d9ab93-8392-4cdf-a9e9-a6e6f2abf3ee",
     "featured-product",
