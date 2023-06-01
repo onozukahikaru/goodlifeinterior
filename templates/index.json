@@ -409,53 +409,6 @@
         "stack_mobile": true
       }
     },
-    "e28f2f05-13eb-45b6-88ca-f0a93de52e76": {
-      "type": "text-with-icons",
-      "disabled": true,
-      "blocks": {
-        "template--18400919191846__e28f2f05-13eb-45b6-88ca-f0a93de52e76-1680159474a43e8cfc-0": {
-          "type": "item",
-          "settings": {
-            "icon": "bi-delivery",
-            "title": "Free delivery worldwide",
-            "content": "<p>Short content about your store<\/p>"
-          }
-        },
-        "template--18400919191846__e28f2f05-13eb-45b6-88ca-f0a93de52e76-1680159474a43e8cfc-1": {
-          "type": "item",
-          "settings": {
-            "icon": "bi-returns",
-            "title": "Satisfied or refunded",
-            "content": "<p>Short content about your store<\/p>"
-          }
-        },
-        "template--18400919191846__e28f2f05-13eb-45b6-88ca-f0a93de52e76-1680159474a43e8cfc-2": {
-          "type": "item",
-          "settings": {
-            "icon": "bi-customer-support",
-            "title": "Top-notch support",
-            "content": "<p>Short content about your store<\/p>"
-          }
-        },
-        "template--18400919191846__e28f2f05-13eb-45b6-88ca-f0a93de52e76-1680159474a43e8cfc-3": {
-          "type": "item",
-          "settings": {
-            "icon": "bi-secure-payment",
-            "title": "安全な決済",
-            "content": "<p>クレジットカードのセキュリティはSSLというシステムを利用しております。 カード番号は暗号化されて安全に送信されますので、どうぞご安心ください。<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--18400919191846__e28f2f05-13eb-45b6-88ca-f0a93de52e76-1680159474a43e8cfc-0",
-        "template--18400919191846__e28f2f05-13eb-45b6-88ca-f0a93de52e76-1680159474a43e8cfc-1",
-        "template--18400919191846__e28f2f05-13eb-45b6-88ca-f0a93de52e76-1680159474a43e8cfc-2",
-        "template--18400919191846__e28f2f05-13eb-45b6-88ca-f0a93de52e76-1680159474a43e8cfc-3"
-      ],
-      "settings": {
-        "stack_mobile": false
-      }
-    },
     "256fd2cc-5af5-4687-8d09-72e3527d5b21": {
       "type": "featured-collection",
       "settings": {
@@ -481,7 +434,6 @@
     "featured-product",
     "1f9b1e04-4427-4dda-b99e-77ece14976f9",
     "blog-posts",
-    "e28f2f05-13eb-45b6-88ca-f0a93de52e76",
     "256fd2cc-5af5-4687-8d09-72e3527d5b21"
   ]
 }
