@@ -136,7 +136,7 @@
             "button_background": "#ff6128",
             "button_text_color": "#ffffff",
             "button_text": "",
-            "button_link": "shopify:\/\/collections\/こたつ"
+            "button_link": "shopify:\/\/collections\/kotatsu"
           }
         }
       },
@@ -154,7 +154,7 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "こたつ",
+        "collection": "kotatsu",
         "title": "Featured collection（おすすめコレクション所属商品を表示できます。現在はこたつ所属商品は１商品のみ）",
         "products_count": 8,
         "layout": "vertical",
@@ -199,7 +199,7 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "こたつ",
+            "collection": "kotatsu",
             "link": ""
           }
         },
