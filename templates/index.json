@@ -206,7 +206,7 @@
         "collection-2": {
           "type": "collection",
           "settings": {
-            "collection": "テーブル",
+            "collection": "table",
             "link": ""
           }
         },
@@ -321,7 +321,7 @@
       "type": "collection-with-image",
       "disabled": true,
       "settings": {
-        "collection": "テーブル",
+        "collection": "table",
         "products_count": 12,
         "show_quick_buy": false,
         "image": "shopify:\/\/shop_images\/pressdainitan001.webp",
