@@ -256,6 +256,53 @@
         "show_collection_title": true
       }
     },
+    "featured-product": {
+      "type": "featured-product",
+      "blocks": {
+        "product-meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false,
+            "show_reviews_badge": false,
+            "show_share_buttons": true
+          }
+        },
+        "variant-selector": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "block",
+            "color_mode": "block",
+            "show_quantity_selector": true,
+            "show_taxes_included": false,
+            "show_inventory_quantity": false,
+            "low_inventory_threshold": 0
+          }
+        },
+        "buy-buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true
+          }
+        }
+      },
+      "block_order": [
+        "product-meta",
+        "variant-selector",
+        "buy-buttons"
+      ],
+      "settings": {
+        "product": "10001046",
+        "title": "",
+        "link_title": "View details",
+        "link_url": "",
+        "image_size": "small",
+        "enable_image_zoom": true,
+        "enable_video_looping": false,
+        "zoom_effect": "outside",
+        "carousel_effect": "fade"
+      }
+    },
     "6b9c0c39-cb08-484a-b716-60f04673df96": {
       "type": "collection-list",
       "blocks": {
@@ -336,55 +383,9 @@
         "button_link": ""
       }
     },
-    "featured-product": {
-      "type": "featured-product",
-      "blocks": {
-        "product-meta": {
-          "type": "product_meta",
-          "settings": {
-            "show_vendor": false,
-            "show_sku": false,
-            "show_reviews_badge": false,
-            "show_share_buttons": true
-          }
-        },
-        "variant-selector": {
-          "type": "variant_selector",
-          "settings": {
-            "selector_mode": "block",
-            "color_mode": "block",
-            "show_quantity_selector": true,
-            "show_taxes_included": false,
-            "show_inventory_quantity": false,
-            "low_inventory_threshold": 0
-          }
-        },
-        "buy-buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_payment_button": true
-          }
-        }
-      },
-      "block_order": [
-        "product-meta",
-        "variant-selector",
-        "buy-buttons"
-      ],
-      "settings": {
-        "product": "10001046",
-        "title": "Featured product（おすすめ商品１商品のみを表示できます。おそらく、商品画面の表示内容をそのまま表示する機能です。直接チェックアウトへ進むことができるのが強みです。）",
-        "link_title": "View details",
-        "link_url": "",
-        "image_size": "small",
-        "enable_image_zoom": true,
-        "enable_video_looping": false,
-        "zoom_effect": "outside",
-        "carousel_effect": "fade"
-      }
-    },
     "1f9b1e04-4427-4dda-b99e-77ece14976f9": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "collection": "good-life-interior",
         "title": "Featured collection（おすすめコレクションに所属する商品を表示できます。現在はオリジナルのコレクションを用意し、3商品表示しています。）",
@@ -417,9 +418,9 @@
     "featured-collection",
     "ffcf066a-079b-4e0b-b9e9-27b7e92b41b7",
     "collection-list",
+    "featured-product",
     "6b9c0c39-cb08-484a-b716-60f04673df96",
     "68d9ab93-8392-4cdf-a9e9-a6e6f2abf3ee",
-    "featured-product",
     "1f9b1e04-4427-4dda-b99e-77ece14976f9",
     "256fd2cc-5af5-4687-8d09-72e3527d5b21"
   ]
