@@ -237,7 +237,8 @@
         "collection-5": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "chair",
+            "image": "shopify:\/\/shop_images\/zaisumago007.jpg",
             "link": ""
           }
         },
