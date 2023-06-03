@@ -204,6 +204,7 @@
     },
     "collection-list": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "collection-1": {
           "type": "collection",
@@ -315,6 +316,7 @@
     },
     "6b9c0c39-cb08-484a-b716-60f04673df96": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "template--18400919191846__6b9c0c39-cb08-484a-b716-60f04673df96-16855835696c655885-0": {
           "type": "collection",
