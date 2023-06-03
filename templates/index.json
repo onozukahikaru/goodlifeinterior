@@ -166,6 +166,7 @@
     },
     "ffcf066a-079b-4e0b-b9e9-27b7e92b41b7": {
       "type": "offers",
+      "disabled": true,
       "blocks": {
         "template--18400919191846__ffcf066a-079b-4e0b-b9e9-27b7e92b41b7-168015942684ed4673-0": {
           "type": "offer",
