@@ -181,7 +181,7 @@
 
         {%- if section.settings.show_payment_icons and shop.enabled_payment_types.size > 0 -%}
           <div class="footer__aside-item footer__aside-item--payment">
-            <p class="footer__aside-title">{{ 'footer.general.we_accept' | t }}</p>
+            <p class="footer__aside-title"></p>
 
             <div class="payment-list">
               {% for type in shop.enabled_payment_types %}
