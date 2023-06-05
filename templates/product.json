@@ -73,12 +73,12 @@
         "show_quick_buy": false
       }
     },
-    "ee4fc8d5-fe91-4fad-9a36-47b744fb35da": {
+    "768ec9bb-aa5f-46c7-8a94-c9e95bdb5f2e": {
       "type": "custom-liquid",
       "settings": {
         "title": "",
-        "include_margins": true,
-        "liquid": "{% for link in linklists.main-menu.links %}\n  {% for collection in product.collections %}\n    {% if link.title == collection.title %}\n      <div>\n        {{ link.title }}\n        {% for sub_link in link.links %}\n          {% for collection in product.collections %}\n            {% if sub_link.title == collection.title %}\n              > {{ sub_link.title }}\n              {% for sub_sub_link in sub_link.links %}\n                {% for collection in product.collections %}\n                  {% if sub_sub_link.title == collection.title %} > {{ sub_sub_link.title }}{% endif %}\n                {% endfor %}\n              {% endfor %}\n            {% endif %}\n          {% endfor %}\n        {% endfor %}\n      <\/div>\n    {% endif %}\n  {% endfor %}\n{% endfor %}"
+        "include_margins": false,
+        "liquid": "{%- assign collection_titles = product.collections | map: 'title' -%}\n\n{% for first_level_link in linklists.main-menu.links %}\n  {% if collection_titles contains first_level_link.title %}\n    <div>\n      <a href=\"\/\">ホーム<\/a>\n      > <a href=\"{{ first_level_link.url }}\">{{ first_level_link.title }}<\/a>\n\n      {% for second_level_link in first_level_link.links %}\n        {% if collection_titles contains second_level_link.title %}\n          > <a href=\"{{ scond_level_link.url }}\">{{ second_level_link.title }}<\/a>\n        {% endif %}\n      {% endfor %}\n\n    <\/div>\n  {% endif %}\n{% endfor %}"
       }
     }
   },
@@ -86,6 +86,6 @@
     "main",
     "product-recommendations",
     "recently-viewed-products",
-    "ee4fc8d5-fe91-4fad-9a36-47b744fb35da"
+    "768ec9bb-aa5f-46c7-8a94-c9e95bdb5f2e"
   ]
 }
