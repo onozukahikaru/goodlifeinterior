@@ -58,7 +58,9 @@
       </li>
       {% for second_level_link in first_level_link.links %}
         {% if collection_titles contains second_level_link.title %}
-          > <a href="{{ scond_level_link.url }}">{{ second_level_link.title }}</a>
+          <li class="breadcrumb__item">
+            <a href="{{ scond_level_link.url }}">{{ second_level_link.title }}</a>
+          </li>
         {% endif %}
       {% endfor %}
     </ol>
