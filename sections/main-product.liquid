@@ -44,6 +44,23 @@
             </li>
           </ol>
           {% endcomment %}
+
+{%- assign collection_titles = product.collections | map: 'title' -%}
+
+{% for first_level_link in linklists.main-menu.links %}
+  {% if collection_titles contains first_level_link.title %}
+    <div>
+      <a href="/">ホーム</a>
+      > <a href="{{ first_level_link.url }}">{{ first_level_link.title }}</a>
+      {% for second_level_link in first_level_link.links %}
+        {% if collection_titles contains second_level_link.title %}
+          > <a href="{{ scond_level_link.url }}">{{ second_level_link.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endfor %}
+
         </nav>
 
         {%- if collection.previous_product or collection.next_product -%}
