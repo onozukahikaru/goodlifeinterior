@@ -46,26 +46,26 @@
           </ol>
           {% endcomment %}
 
-{%- assign collection_titles = product.collections | map: 'title' -%}
-{% for first_level_link in linklists.main-menu.links %}
-  {% if collection_titles contains first_level_link.title %}
-    <ol class="breadcrumb__list" role="list">
-      <li class="breadcrumb__item">
-        <a href="/">ホーム</a> {%- render 'icon', icon: 'arrow-right' -%}
-      </li>
-      <li class="breadcrumb__item">
-        <a href="{{ first_level_link.url }}">{{ first_level_link.title }}</a> {%- render 'icon', icon: 'arrow-right' -%}
-      </li>
-      {% for second_level_link in first_level_link.links %}
-        {% if collection_titles contains second_level_link.title %}
-          <li class="breadcrumb__item">
-            <a href="{{ scond_level_link.url }}">{{ second_level_link.title }}</a>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ol>
-  {% endif %}
-{% endfor %}
+          {%- assign collection_titles = product.collections | map: 'title' -%}
+          {% for first_level_link in linklists.main-menu.links %}
+            {% if collection_titles contains first_level_link.title %}
+              <ol class="breadcrumb__list" role="list">
+                <li class="breadcrumb__item">
+                  <a href="/">ホーム</a> {%- render 'icon', icon: 'arrow-right' -%}
+                </li>
+                <li class="breadcrumb__item">
+                  <a href="{{ first_level_link.url }}">{{ first_level_link.title }}</a> {%- render 'icon', icon: 'arrow-right' -%}
+                </li>
+                {% for second_level_link in first_level_link.links %}
+                  {% if collection_titles contains second_level_link.title %}
+                    <li class="breadcrumb__item">
+                      <a href="{{ scond_level_link.url }}">{{ second_level_link.title }}</a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ol>
+            {% endif %}
+          {% endfor %}
 
         </nav>
 
