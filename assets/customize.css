@@ -48,3 +48,8 @@ td.bg{
     min-width: 300px;
   }
 }
+
+.rte ul ul li::before{
+  background: transparent;
+  border: 1px solid #3a2a2f;
+}
