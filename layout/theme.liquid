@@ -114,6 +114,15 @@
         })();
       </script>
     {%- endif -%}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXSG5VS283"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WXSG5VS283');
+    </script>
   </head>
 
   <body
@@ -135,6 +144,7 @@
     {%- sections 'overlay-group' -%}
 
     <main id="main" role="main">
+      {% render 'breadcrum' %}
       {{ content_for_layout }}
     </main>
 
