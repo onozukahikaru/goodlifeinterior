@@ -59,24 +59,16 @@
         "carousel_effect": "fade"
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "heading": "You may also like",
-        "show_quick_buy": false
-      }
-    },
     "recently-viewed-products": {
       "type": "recently-viewed-products",
       "settings": {
-        "title": "Recently viewed",
-        "show_quick_buy": false
+        "title": "最近見た商品",
+        "show_quick_buy": true
       }
     }
   },
   "order": [
     "main",
-    "product-recommendations",
     "recently-viewed-products"
   ]
 }
