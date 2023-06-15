@@ -30,9 +30,6 @@
 <div class="product-meta">
   {%- if template.name == 'product' and template != 'product.quick-view' -%}
     <h1 class="product-meta__title heading h1">{{ product.title }}</h1>
-    <p>
-      <a href="{{ product.type | url_for_type }}">商品タイプ：{{ product.type }}</a>
-    </p>
   {%- else -%}
     <h3 class="product-meta__title heading h2">
       <a href="{{ product.url }}">{{ product.title }}</a>
