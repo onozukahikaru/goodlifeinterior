@@ -155,12 +155,12 @@
       "type": "featured-collection",
       "settings": {
         "collection": "kotatsu",
-        "title": "Featured collection",
+        "title": "おすすめ商品",
         "products_count": 8,
         "layout": "vertical",
         "stack_products": false,
         "show_quick_buy": true,
-        "link_title": "View all",
+        "link_title": "",
         "link_url": ""
       }
     },
