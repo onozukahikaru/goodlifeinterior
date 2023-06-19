@@ -168,7 +168,7 @@
       "type": "featured-collection",
       "settings": {
         "collection": "table",
-        "title": "おすすめ商品（テーブル）",
+        "title": "Table Recommend",
         "products_count": 8,
         "layout": "vertical",
         "stack_products": false,
