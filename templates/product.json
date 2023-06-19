@@ -37,6 +37,7 @@
         },
         "6f3520b1-6803-4783-8c8b-bb95874e3d14": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "title": "動画",
             "liquid": "{% assign media = product.metafields.custom._video.value %}\n{% if media.media_type == 'video' %}\n  {{ media | video_tag: image_size: '300x', controls: true, autoplay: false, width:300, height:auto }}\n{% endif %}",
