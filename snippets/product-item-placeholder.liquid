@@ -52,7 +52,7 @@
 
       {%- capture vendor -%}
         {%- if settings.show_vendor -%}
-          <a class="product-item__vendor link" href="#">{{ 'home_page.onboarding.vendor_title' | t }}</a>
+          {% comment %} <a class="product-item__vendor link" href="#">{{ 'home_page.onboarding.vendor_title' | t }}</a> {% endcomment %}
         {%- endif -%}
       {%- endcapture -%}
 

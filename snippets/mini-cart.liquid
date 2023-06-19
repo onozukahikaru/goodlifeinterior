@@ -87,16 +87,16 @@
                       {%- assign collection_for_vendor = collections[vendor_handle] -%}
 
                       {%- unless collection_for_vendor.empty? -%}
-                        <a class="mini-cart__product-vendor link" href="{{ collection_for_vendor.url }}">
+                        {% comment %} <a class="mini-cart__product-vendor link" href="{{ collection_for_vendor.url }}">
                           {{- line_item.product.vendor -}}
-                        </a>
+                        </a> {% endcomment %}
                       {%- else -%}
-                        <a
+                        {% comment %} <a
                           class="mini-cart__product-vendor link"
                           href="{{ line_item.product.vendor | url_for_vendor }}"
                         >
                           {{- line_item.product.vendor -}}
-                        </a>
+                        </a> {% endcomment %}
                       {%- endunless -%}
                     {%- endif -%}
                   {%- endunless -%}

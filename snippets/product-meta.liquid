@@ -77,13 +77,13 @@
         {%- assign collection_for_vendor = collections[vendor_handle] -%}
 
         {%- unless collection_for_vendor.empty? -%}
-          <a class="product-meta__vendor link link--accented" href="{{ collection_for_vendor.url }}">
+          {% comment %} <a class="product-meta__vendor link link--accented" href="{{ collection_for_vendor.url }}">
             {{- product.vendor -}}
-          </a>
+          </a> {% endcomment %}
         {%- else -%}
-          <a class="product-meta__vendor link link--accented" href="{{ product.vendor | url_for_vendor }}">
+          {% comment %} <a class="product-meta__vendor link link--accented" href="{{ product.vendor | url_for_vendor }}">
             {{- product.vendor -}}
-          </a>
+          </a> {% endcomment %}
         {%- endunless -%}
       {%- endif -%}
 

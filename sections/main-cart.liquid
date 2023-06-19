@@ -91,9 +91,9 @@
                                 {%- assign collection_for_vendor = collections[vendor_handle] -%}
 
                                 {%- unless collection_for_vendor.empty? -%}
-                                  <a class="line-item__vendor link" href="{{ collection_for_vendor.url }}">{{ line_item.product.vendor }}</a>
+                                  {% comment %} <a class="line-item__vendor link" href="{{ collection_for_vendor.url }}">{{ line_item.product.vendor }}</a> {% endcomment %}
                                   {%- else -%}
-                                  <a class="line-item__vendor link" href="{{ line_item.product.vendor | url_for_vendor }}">{{ line_item.product.vendor }}</a>
+                                  {% comment %} <a class="line-item__vendor link" href="{{ line_item.product.vendor | url_for_vendor }}">{{ line_item.product.vendor }}</a> {% endcomment %}
                                 {%- endunless -%}
                               {%- endif -%}
 
