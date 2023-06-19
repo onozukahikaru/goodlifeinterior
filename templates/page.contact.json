@@ -7,7 +7,24 @@
     },
     "contact-form": {
       "type": "contact-form",
+      "blocks": {
+        "401e070e-fca2-47a1-aa37-af6a85e7ece3": {
+          "type": "dropdown",
+          "settings": {
+            "title": "お問い合わせ種別",
+            "values": "商品（詳細・再入荷）について,配送（納期・送料・各種変更）について,支払いについて,初期不良（返金・交換）について,その他"
+          }
+        }
+      },
+      "block_order": [
+        "401e070e-fca2-47a1-aa37-af6a85e7ece3"
+      ],
       "settings": {
+        "form_heading": "",
+        "form_content": "",
+        "show_store_info": false,
+        "store_heading": "Find us",
+        "store_info": ""
       }
     }
   },
