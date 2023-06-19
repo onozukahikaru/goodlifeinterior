@@ -160,7 +160,7 @@
         "layout": "vertical",
         "stack_products": false,
         "show_quick_buy": true,
-        "link_title": "",
+        "link_title": "View all",
         "link_url": ""
       }
     },
