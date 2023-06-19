@@ -155,7 +155,7 @@
       "type": "featured-collection",
       "settings": {
         "collection": "kotatsu",
-        "title": "おすすめ商品（こたつ）",
+        "title": "kotatsu recommend",
         "products_count": 8,
         "layout": "vertical",
         "stack_products": false,
