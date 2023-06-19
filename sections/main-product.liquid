@@ -144,6 +144,16 @@
                     </div>
                   </div>
                 {%- endif -%}
+                {% assign media = product.metafields.custom._video.value %}
+                {% if media.media_type == 'video' %}
+                  <div class="card">
+                    <div class="card__section {% if block.settings.display_mode == 'view_more' %}expandable-content{% endif %}" {% if block.settings.display_mode == 'view_more' %}aria-expanded="false"{% endif %}>
+                      <div class="rte text--pull">
+                        {{ media | video_tag: image_size: '300x', controls: true, autoplay: false, width:300, height:auto }}
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
 
               {%- when 'content' -%}
                 {%- comment -%}
