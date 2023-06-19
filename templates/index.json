@@ -3,22 +3,6 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "slide-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/11.jpg",
-            "show_overlay": false,
-            "overlay_opacity": 30,
-            "text_color": "#333333",
-            "title": "",
-            "content": "",
-            "content_position": "top_left",
-            "button_background": "#333333",
-            "button_text_color": "#ffffff",
-            "button_text": "",
-            "link": "https:\/\/good-life-interior.com\/products\/kotatsu-kotatsu-futon-vejle190240"
-          }
-        },
         "slide-2": {
           "type": "image",
           "settings": {
@@ -69,7 +53,6 @@
         }
       },
       "block_order": [
-        "slide-1",
         "slide-2",
         "9ddd5318-8578-4e3f-9c76-06cdc6e81aa5",
         "cdd56f8c-a6fa-4c79-a8bc-20c6f417daa5"
