@@ -4,9 +4,17 @@
       "type": "main-404",
       "settings": {
       }
+    },
+    "b00a3162-73d5-41ae-913c-04547fe236cf": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "title": "Recently viewed",
+        "show_quick_buy": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "b00a3162-73d5-41ae-913c-04547fe236cf"
   ]
 }
