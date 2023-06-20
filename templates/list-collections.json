@@ -3,6 +3,11 @@
     "main": {
       "type": "main-collections-list",
       "settings": {
+        "collections_to_show": "selected",
+        "collection_linklist": "main-menu",
+        "show_collection_title": true,
+        "show_collection_overlay": true,
+        "collection_overlay_opacity": 20
       }
     }
   },
