@@ -63,7 +63,7 @@
     "recently-viewed-products": {
       "type": "recently-viewed-products",
       "settings": {
-        "title": "最近見た商品",
+        "title": "Recently viewed",
         "show_quick_buy": true
       }
     }
