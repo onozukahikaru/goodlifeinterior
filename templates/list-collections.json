@@ -9,9 +9,17 @@
         "show_collection_overlay": true,
         "collection_overlay_opacity": 20
       }
+    },
+    "928452e1-c408-4feb-958a-cbf0195f66f8": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "title": "最近見た商品",
+        "show_quick_buy": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "928452e1-c408-4feb-958a-cbf0195f66f8"
   ]
 }
